@@ -1,0 +1,180 @@
+@import "tailwindcss";
+
+
+:root {
+
+/*colors*/
+
+--Lime: 61, 70%, 52%;
+}
+
+
+/*css rest*/
+
+*,*::before,  *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
+
+/*end of css rest*/
+
+/*remove animations for people who've turned them off*/
+
+@media (prefers-reduced-motion: reduce) {
+    *,*::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.1ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+
+.skip-to-content {
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    color: hsla(var(--White));
+    text-decoration: none;
+    padding: 2rem 1rem;
+    transform: translateY(-100%);
+    transition: transform 250ms linear;
+}
+
+.skip-to-content:focus {
+    transform: translateY(0);
+}
+
+
+
+body {
+  font-size: 1rem;
+}
+
+h1 {
+    font-family: var(--ff-nunito-sans);
+    font-weight: 900;
+    color: black;
+}
+
+
+article {
+    transition: all 0.2 ease-in-out;   
+}
+
+article:hover {
+    transform: translateY(-5px);
+}
+
+.info-sec {
+    padding: 2rem 0 3rem 1.5rem;
+}
+
+
+
+h2 {
+    font-family: var(--ff-nunito-sans);
+    font-weight: 800;
+    color: black;
+    padding-bottom: 0.950rem;
+    font-size: 1.3rem;
+}
+
+
+ span {
+    font-family: var(--ff-nunito-sans);
+    font-weight: 600;
+}
+
+ p {
+    font-family: var(--ff-nunito-sans);
+    font-weight: 300;
+    padding-bottom: 4px;
+}
+
+.btn-back {
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+    font-weight: 300;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+    margin-bottom: 4rem;
+    transition: all 0.2 ease-out ;
+}
+
+.btn-back:hover {
+    transform: scale(1.03);
+}
+
+.country-name {
+    font-family: var(--ff-nunito-sans);
+    font-weight: 900;
+    color: black;
+    font-size: 1.8rem;
+    padding-top: 3rem;
+    padding-bottom: 1.2rem;
+}
+
+
+.extra-info-s {
+    padding-bottom: 2.5rem;
+}
+
+.border-btn {
+    transition: all 0.2 ease;
+    cursor: pointer;
+}
+
+.border-btn:hover {
+    transform: scale(1.08);
+    font-weight: 400;
+}
+
+.border-btn:focus,
+.btn-back:focus {
+    outline: 2px solid black;
+    outline-offset: 3px;
+}
+
+.region-span {
+    font-weight: 300;
+}
+
+.search-input {
+    font-size: 14px;
+}
+
+.magnify-icon {
+    margin-inline: 1.5rem;
+}
+
+.region-list {
+    margin-top: 5px;
+}
