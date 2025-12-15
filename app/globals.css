@@ -1,14 +1,6 @@
 @import "tailwindcss";
 
 
-:root {
-
-/*colors*/
-
---Lime: 61, 70%, 52%;
-}
-
-
 /*css rest*/
 
 *,*::before,  *::after {
@@ -56,24 +48,6 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 
-.skip-to-content {
-    position: absolute;
-    z-index: 9999;
-    top: 0;
-    left: 0;
-    color: hsla(var(--White));
-    text-decoration: none;
-    padding: 2rem 1rem;
-    transform: translateY(-100%);
-    transition: transform 250ms linear;
-}
-
-.skip-to-content:focus {
-    transform: translateY(0);
-}
-
-
-
 body {
   font-size: 1rem;
 }
@@ -81,7 +55,6 @@ body {
 h1 {
     font-family: var(--ff-nunito-sans);
     font-weight: 900;
-    color: black;
 }
 
 
@@ -102,7 +75,6 @@ article:hover {
 h2 {
     font-family: var(--ff-nunito-sans);
     font-weight: 800;
-    color: black;
     padding-bottom: 0.950rem;
     font-size: 1.3rem;
 }
@@ -136,7 +108,6 @@ h2 {
 .country-name {
     font-family: var(--ff-nunito-sans);
     font-weight: 900;
-    color: black;
     font-size: 1.8rem;
     padding-top: 3rem;
     padding-bottom: 1.2rem;
@@ -155,12 +126,6 @@ h2 {
 .border-btn:hover {
     transform: scale(1.08);
     font-weight: 400;
-}
-
-.border-btn:focus,
-.btn-back:focus {
-    outline: 2px solid black;
-    outline-offset: 3px;
 }
 
 .region-span {

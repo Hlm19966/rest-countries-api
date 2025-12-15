@@ -1,3 +1,4 @@
+
 import { Country } from "@/app/types/country"
 import Link from "next/link";
 import { getCountries } from "@/app/data/getCountries";
@@ -30,14 +31,15 @@ const filtered = countries.filter(country => {
 }); 
 
 
+
   return (
-    <>
+    <main className="w-full">
     <section className="w-full px-8 md:px-12 py-5 flex justify-between lg:items-center lg:flex-row flex-col items-start gap-10 lg:gap-0">
       <SearchForm search={search}/>
       <FilteredRegion />
      </section>
 
-      <main className="w-full flex justify-center px-12 py-10">
+      <section className=" flex justify-center px-12 py-10">
        <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
         {filtered.map((c) => (
           
@@ -64,8 +66,8 @@ const filtered = countries.filter(country => {
            </article>
         ))}
        </section>
-      </main>
-    </>
+      </section>
+    </main>
   );
 }
 

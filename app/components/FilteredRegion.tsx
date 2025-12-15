@@ -35,7 +35,7 @@ export default function FilteredRegion() {
         {isOpen && (
             <ul
              id="region-menu"
-             className="min-w-full absolute left-0 rounded-md shadow-md px-6 py-3 bg-white z-1 region-list"
+             className="min-w-full absolute left-0 rounded-md shadow-md px-6 py-3 z-1 region-list"
              >
                 {regions.map((region) => (
                     <li key={region}

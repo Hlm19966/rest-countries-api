@@ -29,7 +29,7 @@ export default async function pageSlug( { params }: PageProps ) {
 
     return(
         <>
-        <main className="py-10 px-8">
+        <main className="py-10 px-12">
             <Link href={'/'}>
              <button 
             className="rounded-sm py-1 px-7 btn-back"
